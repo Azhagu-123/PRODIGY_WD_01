@@ -1,0 +1,158 @@
+/* Reset and Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light grey background */
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left:-23px;
+    padding: 15px 20px;
+    background-color: #fd1100;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background 0.3s;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links li a:hover {
+    color: yellow;
+}
+
+/* Hero Section */
+header {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(to right, #c88ea7, #99627a);
+    color: white;
+    margin-top: 60px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+header {
+    background-image: url('back.avif'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the image in the header */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    color: white; /* Makes the text color white so it's visible against the background */
+    text-align: center;
+    padding: 50px 20px; /* Adds padding to give space around the text */
+    height: 300px; /* Adjust the height of the header as needed */
+    overflow: hidden; 
+}
+
+header h1 {
+    font-size: 3em; /* Adjust font size for the heading */
+}
+
+header p {
+    font-size: 1.5em; /* Adjust font size for the paragraph */
+}
+
+/* Food Categories (Horizontal Scroll) */
+.categories {
+    text-align: center;
+    padding: 40px;
+    background: white;
+}
+
+.categories h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #ad2b03;
+}
+
+/* Scrollable Container */
+.category-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px;
+    white-space: nowrap;
+    scrollbar-width: thin;
+    scrollbar-color: #01dc7a #f4f4f4;
+}
+
+/* Food Category Items */
+.category {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+}
+
+.category img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.category p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.category:hover {
+    transform: scale(1.05);
+    background: #d46a00;
+    color: white;
+}
+
+/* Horizontal Scrollbar Styling */
+.category-container::-webkit-scrollbar {
+    height: 6px;
+}
+
+.category-container::-webkit-scrollbar-track {
+    background: #f4f4f4;
+}
+
+.category-container::-webkit-scrollbar-thumb {
+    background: #e7cbcb;
+    border-radius: 10px;
+}
+
